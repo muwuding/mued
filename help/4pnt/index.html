@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1"/>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>四方网络帮助中心</title>
+		<meta name="description" content="四方网络帮助中心">
+		<meta name="keywords" content="四方网络">
+		<link href="../../../common/css/common.css?ver=6.0.1" rel="stylesheet">
+		<style type="text/css">
+			.wrap {
+				margin: 40px auto 40px;
+				padding: 50px 20px;
+				width: 90%;
+				box-shadow: 0 0 5px #aaa;
+			}
+			h1 {
+				line-height: 2;
+				font-size: 20px;
+				font-weight: 400;
+				color: #066ff1;
+			}
+
+			.content h2 {
+				line-height: 1.6;
+				font-size: 16px;
+				font-weight: 400;
+				color: #333;
+			}
+
+			.content p {
+				margin-bottom: 20px;
+				line-height: 2;
+				font-size: 16px;
+				color: #333;
+			}
+			.footer {
+				margin: 0 auto 40px;
+				width: 90%;
+				text-align: center;
+			}
+			.footer a {
+				font-size: 16px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<h1>一、新增新闻页面方法</h1>
+			<div class="content">
+				<h2>1、首先应完成将要新增的新闻单页</h2>
+				<p>新增方法：复制一个已经完成的新闻单页，例如<span>20151203.html</span>；然后修改图片和文字，重命名后保存到新闻目录下即可。此步骤需要有html基础的同学完成较好！</p>
+				<h2>2、修改js配置文件</h2>
+				<p>找到<span>JS</span>目录下的<span>config-news.js</span>文件，如下图：</p>
+				<p><img src="pic_0.png" alt=""></p>
+				<p>复制绿色框内的代码。如下图：</p>
+				<p><img src="pic_1.png" alt=""></p>
+				<p>在绿色框前粘贴，例如，要新增一个20151204的新闻，黄色框是新增的代码，如下图。其中：linkUrl指新闻的链接路径，imgUrl指新闻列表前的小图片，title指新闻标题，time指新闻时间，summary指新闻的摘要。保存后替换原来的<span>config-news.js</span>即可。刷新页面就可以在首页和新闻列表页看到新增的新闻了。</p>
+				<p><img src="pic_2.png" alt=""></p>
+				<p>有问题请咨询QQ:138009949</p>
+			</div>
+		</div>
+		<div class="footer">
+			<a href="http://www.miitbeian.gov.cn" title="欢迎查证">粤ICP备15095650号</a>
+		</div>
+	</body>
+	<script>
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "//hm.baidu.com/hm.js?39b7f0311c93949c6beb92e94bc2ff8d";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+	</script>
+</html>
