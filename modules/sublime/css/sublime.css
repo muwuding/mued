@@ -1,0 +1,55 @@
+/* 
+*描述：sublime.css
+*作者：覃兴军
+*最后更新日期：2015-11-11
+*/
+body {
+  background: #fff;
+}
+header {
+  padding: 10px 0;
+  text-align: center;
+}
+header img {
+  width: 99px;
+  height: 99px;
+  vertical-align: middle;
+}
+header h1 {
+  display: inline;
+  line-height: 99px;
+  vertical-align: middle;
+}
+footer{
+  padding: 30px 0;
+  text-align: center;
+}
+footer a {
+  color:#666;
+}
+footer a:hover{
+	text-decoration: underline;
+	color: #001eff;
+}
+section {
+  padding: 5%;
+}
+section article{
+  display: block;
+  padding: 3%;
+  border-radius: 1px;
+  box-shadow: 2px 2px 5px #999;
+}
+section article + article {
+  margin-top: 5%;
+}
+section h2 {
+  padding: 10px;
+  font-weight: 400;
+  color: #0f56f5;
+  border-bottom: 1px solid #eee;
+}
+section pre,
+section p {
+  padding: 10px;
+}
