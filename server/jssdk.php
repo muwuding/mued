@@ -5,7 +5,7 @@ class JSSDK {
 
   public function __construct($appId, $appSecret) {
     $this->appId = $appId;
-    $this->appSecret = $appSecret;
+    $this->appSecret = $appSecret;d
   }
 
   public function getSignPackage() {
@@ -31,7 +31,7 @@ class JSSDK {
       "signature" => $signature,
       "rawString" => $string
     );
-    return $signPackage; 
+    return $signPackage;
   }
 
   private function createNonceStr($length = 16) {
