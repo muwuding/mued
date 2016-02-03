@@ -1,0 +1,15 @@
+extends ../common/full_layout
+
+//- 样式文件
+append css
+  link(type="text/css" rel='stylesheet', href='/css/opus.min.css')
+
+//- 主体内容
+block content
+  .mu-container
+    | 作品展示
+
+//- 脚本文件
+append script
+  script(type="text/javascript" src='/js/lib/jquery-1.11.2.min.js')
+  script(type="text/javascript" src='/js/opus.min.js')
