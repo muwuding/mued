@@ -14,7 +14,8 @@
 // 脚手架
 .mu-container {
   margin: 0 auto;
-  width: 90%;
+  width: 100%;
+  max-width: 1200px;
 }
 
 // 顶部
@@ -84,6 +85,42 @@
   text-align: center;
   color: #ccc;
   background: rgba(0, 0, 0, .3)
+}
+
+// 弹窗
+.mu-ajax-window {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1001;
+  overflow: auto;
+  background: rgba(0,0,0,.5);
+
+  .mu-ajax-window-content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    z-index: 1001;
+    margin-left: -500px;
+    padding: 40px 20px;
+    width: 1000px;
+    background: #fff;
+    overflow: auto;
+  }
+
+  .mu-ajax-window-close {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: url(/images/close.png) no-repeat 0 0;
+  }
 }
 
 // 弹窗

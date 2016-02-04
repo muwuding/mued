@@ -123,7 +123,10 @@ module.exports = function(grunt) {
     jade: {
       dist: {
         options: {
-          banner: '<%= banner %>'
+          banner: '<%= banner %>',
+          data: function() {
+            return require('./server/data.json');
+          }
         },
         files: [
           {
@@ -169,6 +172,10 @@ module.exports = function(grunt) {
       html: {
         files: ['views/**/*.html'],
         tasks: ['copy']
+      },
+      jade: {
+        files: ['views/**/*.jade'],
+        tasks: ['jade']
       },
       uglify: {
         files: ['static/js/**/*.js'],

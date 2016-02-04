@@ -1,0 +1,29 @@
+//- 全屏布局模板
+doctype html
+html(lang="zh-CN")
+  head
+    meta(charset="utf-8")
+    meta(name="renderer", content="webkit")
+    meta(http-equiv="X-UA-Compatible", content="IE=Edge")
+    meta(name="viewport", content="width=device-width,initial-scale=1.0")
+    meta(name="keywords", content="木屋顶,web前端,nodejs,github,express,sublime")
+    meta(name="description", content="到木屋顶来聊前端")
+    title 木屋顶
+    block css
+  body
+    //- 页眉
+    include header
+
+    //- 主体
+    block content
+
+    //- 页脚
+    include footer
+
+    //- 页面小工具
+    include widget
+
+    //- 底部加载scripts
+    block script
+      script(type="text/javascript" src='/js/lib/jquery-1.11.2.min.js')
+      script(type="text/javascript" src='/js/common.min.js')

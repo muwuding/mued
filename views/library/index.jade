@@ -1,4 +1,4 @@
-extends ../common/full_layout
+extends ../common/layout
 
 //- 样式文件
 append css
@@ -6,8 +6,12 @@ append css
 
 //- 主体内容
 block content
-  .mu-container
-    | 资源页
+  .mu-container.clearfix
+    each item in library
+      a.list-item(href="##{item.id}")
+          .item-img
+            img(src="#{item.img}")
+          .item-title #{item.title}
 
 //- 脚本文件
 append script

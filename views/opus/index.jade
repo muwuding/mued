@@ -1,4 +1,4 @@
-extends ../common/full_layout
+extends ../common/layout
 
 //- 样式文件
 append css
@@ -6,8 +6,12 @@ append css
 
 //- 主体内容
 block content
-  .mu-container
-    | 作品展示
+  .mu-container.clearfix
+    a.list-item
+      .item-img
+        img(src="/images/opus_1.jpg")
+      .item-title
+        | 什么问题就是你的
 
 //- 脚本文件
 append script
