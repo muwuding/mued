@@ -1,6 +1,18 @@
 {
   "library": [
     {
+      "id": 203003,
+      "title": "sublime个人设置",
+      "img": "/images/203003.jpg",
+      "data": "2016-2-4"
+    },
+    {
+      "id": 203002,
+      "title": "sublime常用插件",
+      "img": "/images/203002.jpg",
+      "data": "2016-2-4"
+    },
+    {
       "id": 203001,
       "title": "sublime常用快捷键",
       "img": "/images/203001.jpg",
@@ -9,6 +21,14 @@
     {
       "id": 202001,
       "title": "git常用命令",
+      "img": "/images/202001.jpg",
+      "data": "2016-2-4"
+    }
+  ],
+  "help": [
+    {
+      "id": 300001,
+      "title": "四方网络添加新闻教程",
       "img": "/images/202001.jpg",
       "data": "2016-2-4"
     }
