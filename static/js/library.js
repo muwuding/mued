@@ -11,7 +11,7 @@ muHandler.init = function(t) {
   var id = window.location.hash.substr(1);
 
   if(id && (id.length > 0)){
-    $('.mu-ajax-window-content').load('./' + id + '.html', function(res, status, xhr){
+    $('.mu-ajax-window-content').load('./library/' + id + '.html', function(res, status, xhr){
       if(status === 'success'){
         $('.mu-ajax-window').fadeIn(t);
       } else{

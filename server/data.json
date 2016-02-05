@@ -1,4 +1,12 @@
 {
+  "opus": [
+    {
+      "link": "./opus/weixin_jssdk/index.php",
+      "title": "微信JSSDK调用示例",
+      "img": "/opus/weixin_jssdk/banner.jpg",
+      "data": "2016-2-5"
+    }
+  ],
   "library": [
     {
       "id": 203003,

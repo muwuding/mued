@@ -1,15 +1,39 @@
-extends common/layout
+//- 首页模板
+doctype html
+html(lang="zh-CN")
+  head
+    meta(charset="utf-8")
+    meta(name="renderer", content="webkit")
+    meta(http-equiv="X-UA-Compatible", content="IE=Edge")
+    meta(name="viewport", content="width=device-width,initial-scale=1.0")
+    meta(name="keywords", content="木屋顶,web前端,nodejs,github,express,sublime")
+    meta(name="description", content="到木屋顶来聊前端")
+    title 木屋顶
+    link(type="text/css" rel='stylesheet', href='/css/index.min.css')
+  body
+    //- 网站页眉
+    header.mu-header
+      .mu-container.clearfix
+        //- navbar
+        .mu-navbar
+          ul
+            li
+              a(href='/opus.html') 作品
+            li
+              a(href='/library.html') 资源
+            li
+              a(href='/help.html') 帮助
 
-//- 样式文件
-append css
-  link(type="text/css" rel='stylesheet', href='/css/index.min.css')
+    //- 主体
+    .mu-container
+      .logo
+      .pao
 
-//- 主体内容
-block content
-  .houwang
-  .yaoguai
-  .taopao
+    //- 网站页脚
+    footer.mu-footer.fixed
+      .mu-container
+        | Copyright &copy; 2015-2016 木屋顶工作室 版权所有. 粤ICP备15095650号
 
-//- 脚本文件
-append script
-  script(type="text/javascript" src='/js/index.min.js')
+    script(type="text/javascript" src='/js/lib/jquery-1.11.2.min.js')
+    script(type="text/javascript" src='/js/common.min.js')
+    script(type="text/javascript" src='/js/index.min.js')

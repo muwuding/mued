@@ -116,6 +116,26 @@ module.exports = function(grunt) {
             dest: 'dist'
           }
         ]
+      },
+      server: {
+        files: [
+          {
+            expand: true,
+            cwd: 'server',
+            src: ['**/*'],
+            dest: 'dist/server'
+          }
+        ]
+      },
+      other: {
+        files: [
+          {
+            expand: true,
+            cwd: 'views/opus',
+            src: ['**/*','!**/*.jade'],
+            dest: 'dist/opus'
+          }
+        ]
       }
     },
 

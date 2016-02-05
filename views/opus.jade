@@ -1,4 +1,4 @@
-extends ../common/layout
+extends common/layout
 
 //- 样式文件
 append css
@@ -7,7 +7,11 @@ append css
 //- 主体内容
 block content
   .mu-container.clearfix
-    | 作品
+    each item in opus
+      a.list-item(href="#{item.link}", target="_blank")
+          .item-img
+            img(src="#{item.img}")
+          .item-title #{item.title}
 
 //- 脚本文件
 append script

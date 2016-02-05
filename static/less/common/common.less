@@ -16,6 +16,7 @@
   margin: 0 auto;
   width: 100%;
   max-width: 1200px;
+  min-width: 960px;
 }
 
 // 顶部
@@ -81,10 +82,38 @@
   right: 5%;
   width: 60px;
   height: 60px;
+  background: url('/images/top.png') no-repeat center center;
+  opacity: 0.6;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.mu-qq-contact {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
   line-height: 60px;
   text-align: center;
-  color: #ccc;
-  background: rgba(0, 0, 0, .3)
+
+  &:hover {
+
+    img {
+      margin: 12px;
+      width: 36px;
+      height: 36px;
+    }
+  }
+
+  img {
+    margin: 17px;
+    width: 26px;
+    height: 26px;
+  }
 }
 
 // 弹窗
@@ -96,8 +125,8 @@
   bottom: 0;
   left: 0;
   z-index: 1001;
-  overflow: auto;
-  background: rgba(0,0,0,.5);
+  overflow: scroll;
+  background: rgba(0,0,0,.6);
 
   .mu-ajax-window-content {
     position: absolute;
@@ -110,6 +139,27 @@
     width: 1000px;
     background: #fff;
     overflow: auto;
+    box-shadow: 0 0 3px #000;
+
+    // 滚动条宽度
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    // 滚动条背景
+    &::-webkit-scrollbar-track {
+        background-color: #ddd;
+    }
+
+    // 滑块颜色
+    &::-webkit-scrollbar-thumb {
+        background-color: #33a524;
+    }
+
+    // 滑轨两头的监听按钮颜色
+    &::-webkit-scrollbar-button {
+        display: none;
+    }
   }
 
   .mu-ajax-window-close {
@@ -117,9 +167,14 @@
     position: absolute;
     top: 20px;
     right: 20px;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     background: url(/images/close.png) no-repeat 0 0;
+    opacity: 0.6;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 }
 
@@ -131,4 +186,24 @@
   bottom: 0;
   left: 0;
   z-index: 8000;
+}
+
+// 自定义
+.text-blue {
+  color: #0f80f4;
+}
+.text-red {
+  color: #f12828;
+}
+.text-yellow {
+  color: #dfcd04;
+}
+.text-green {
+  color: #33a524;
+}
+.text-gray {
+  color: #666;
+}
+.text-light {
+  color: #999;
 }

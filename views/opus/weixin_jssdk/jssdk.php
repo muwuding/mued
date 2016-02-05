@@ -5,7 +5,7 @@ class JSSDK {
 
   public function __construct($appId, $appSecret) {
     $this->appId = $appId;
-    $this->appSecret = $appSecret;d
+    $this->appSecret = $appSecret;
   }
 
   public function getSignPackage() {
