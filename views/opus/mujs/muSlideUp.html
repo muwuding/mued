@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="木屋顶,时节到,花自开">
+  <meta name="keywords" content="木屋顶">
+  <title>muSlideUp演示</title>
+  <link rel="stylesheet" type="text/css" href="demo.css"/>
+  <style>
+    .wrap {
+      margin: 5% auto;
+      width:80%;
+      height:44px;
+      border:1px solid #ddd;
+      overflow:hidden;
+    }
+    .wrap li,
+    .wrap p {
+      display: block;
+      height:44px;
+      line-height:44px;
+      list-style:none
+    }
+    .box {
+      padding: 7%;
+    }
+    .box li {
+      margin-bottom: 20px;
+    }
+    .box span {
+      display: inline-block;
+      width: 60px;
+      text-align: right;
+    }
+  </style>
+
+</head>
+<body>
+  <div class="ui-left">
+    <ul class="wrap" id="wrap">
+      <li>【木屋顶】欢迎你的光临！对你说<b>（1）</b>声好！</li>
+      <li>【木屋顶】欢迎你的光临！对你说<b>（2）</b>声好！</li>
+      <li>【木屋顶】欢迎你的光临！对你说<b>（3）</b>声好！</li>
+      <li>【木屋顶】欢迎你的光临！对你说<b>（4）</b>声好！</li>
+      <li>【木屋顶】欢迎你的光临！对你说<b>（5）</b>声好！</li>
+    </ul>
+  </div>
+  <div class="ui-right">
+    <ul class="box">
+      <li><span>time：</span><input id="time" class="ui-text" type="text" value=""></li>
+      <li><span>speed：</span><input id="speed" class="ui-text" type="text" value=""></li>
+    </ul>
+  </div>
+  <script type="text/javascript" language="javascript" src="/js/lib/jquery-1.11.2.min.js"></script>
+  <script type="text/javascript" language="javascript" src="/js/mujs.min.js"></script>
+  <script type="text/javascript">
+  $(function(){
+    $('#wrap').muSlideUp();
+
+    $('.ui-text').on('blur', function(){
+      var t = parseInt($('#time').val()),
+          s = parseInt($('#speed').val());
+      t = t ? t : 3000;
+      s = s ? s : 3000;
+
+      $('#wrap').muSlideUp({time:t, speed:s});
+    });
+  })
+  </script>
+</body>
+</html>
