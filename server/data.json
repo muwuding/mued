@@ -5,6 +5,12 @@
       "title": "微信JSSDK调用示例",
       "img": "/opus/weixin_jssdk/banner.jpg",
       "data": "2016-2-5"
+    },
+    {
+      "link": "./opus/mujs/index.html",
+      "title": "muJs实例演示",
+      "img": "/opus/mujs/banner.jpg",
+      "data": "2016-3-24"
     }
   ],
   "library": [
