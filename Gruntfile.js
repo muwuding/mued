@@ -186,8 +186,8 @@ module.exports = function(grunt) {
         }
       },
       less: {
-        files: ['static/less/**/*.less'],
-        tasks: ['less']
+        files: ['static/**/*.less','views/**/*.css'],
+        tasks: ['less', 'copy']
       },
       html: {
         files: ['views/**/*.html'],
@@ -198,8 +198,8 @@ module.exports = function(grunt) {
         tasks: ['jade']
       },
       uglify: {
-        files: ['static/js/**/*.js'],
-        tasks: ['uglify']
+        files: ['static/**/*.js','views/**/*.js'],
+        tasks: ['uglify','copy']
       },
       images: {
         files: ['static/images/**/*'],
